@@ -14,4 +14,13 @@
     <properties>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.food.ordering.system</groupId>
+            <artifactId>order-domain-core</artifactId>
+            <!-- version'u eklemezsek hata verir. Buraya eklemek yerine en dıştaki pom.xml'e ekledik.
+            bu sayede bu pom.xml versiyon aradığında en dıştaki versiyonu bulacak. O versiyon üzerinden bağımlılığı indirecek -->
+        </dependency>
+    </dependencies>
+
 </project>
