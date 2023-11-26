@@ -20,6 +20,7 @@
 
     <modules>
         <module>order-service</module>
+        <module>common</module>
     </modules>
     <!-- Default jar olarak gelir. Kaynak kod olmadığı için jar kullanmak mantıksızdır. Pom olarak ayarladık ve child modüller için burayı parent pom.xml olarak ayarlamış olduk. -->
 
@@ -52,6 +53,11 @@
             <dependency>
                 <groupId>com.food.ordering.system</groupId>
                 <artifactId>order-messaging</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.food.ordering.system</groupId>
+                <artifactId>common-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
